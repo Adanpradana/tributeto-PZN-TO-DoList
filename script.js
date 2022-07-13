@@ -1,13 +1,9 @@
+const person = new Person();
 const todoList = ["html", "javascript", "web API"];
 const submitForms = document.forms["toDoform"];
 const button = document.getElementById("button");
 
-const clearTodoList = () => {
-  const todoBody = document.getElementById("todoBody");
-  while (todoBody.firstChild) {
-    todoBody.removeChild(todoBody.firstChild);
-  }
-};
+const clearTodoList = () => person.clearing;
 
 function removeList(index) {
   todoList.splice(index, 1);
